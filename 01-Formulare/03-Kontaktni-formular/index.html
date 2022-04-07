@@ -22,5 +22,64 @@
 		... nebo ho napoj na některou z formulářových služeb na internetu.
 	-->
 
+	<h1>Kontaktní formulář</h1>
+<form action="http://formular.itgirls.cz" method="GET">
+
+	<div class="form-field">
+		<label for="name">Jméno a příjmení <span class="required">*</span></label>
+		<input type="text" name="name" id="name" required>
+	</div>
+
+	<div class="form-field">
+		<label for="email">E-mail <span class="required">*</span></label>
+		<input type="text" name="email" id="email" required>
+	</div>
+
+	<div class="form-field">
+		<label for="phone">Telefon</label>
+		<input type="phone" name="phone" id="phone" placeholder="+420 xxx xxx xxx">
+	</div>
+
+
+	<div class="form-field">
+		<label for="object">Čeho se týka váš dotaz</label>
+		<select name="object" id="object"> 
+			<option value="produkt">Dotaz na produkt</option>
+			<option value="objednavka">Dotaz na objednávku</option>
+			<option value="reklamace">Reklamace</option>
+		</select>
+	</div>
+
+
+	<div class="form-field">
+		<label for="message">Zpráva</label>
+		<textarea name="message" id="message" rows="10"> </textarea>
+	</div>
+
+	
+	
+	<div class="form-checkbox">
+		<input type="checkbox" name="call-me-back" id="call-me-back" value="ano">
+		<label for="call-me-back">zavolej mi zpět</label>
+	</div>
+
+	<div class="form-field">
+	<label>Pohlavi</label>
+		<div class="form-radio">
+			<input type="radio" name="sex" id="female" value="zena">
+			<label for="female">zena</label>
+		</div>
+
+		<div class="form-radio">
+			<input type="radio" name="sex" id="male" value="muz">
+			<label for="muz">muz</label>
+		</div>
+	</div>
+
+
+	<button class="button" 
+		type="submit" name="submit" id="submit">Odeslat</button>
+
+</form>
 </body>
 </html>
